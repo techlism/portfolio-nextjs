@@ -22,7 +22,7 @@ function Greeting() {
       setIndex((prevIndex) => (prevIndex + 1) % greetings.length);
     }, 3000);
     return () => clearInterval(timer);
-  }, [greetings]);
+  });
 
   return (
     <Card className="auto-gradient m-2 max-w-[85vw] flex align-middle justify-start">
