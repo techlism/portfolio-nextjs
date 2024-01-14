@@ -2,7 +2,7 @@
 
 import { Cplusplus } from '@styled-icons/simple-icons/Cplusplus';
 import { ReactLogo } from '@styled-icons/fa-brands/ReactLogo';
-import { NodeJs } from '@styled-icons/fa-brands/Nodejs';
+import { NodeJs } from '@styled-icons/fa-brands/NodeJs';
 import { Javascript } from '@styled-icons/boxicons-logos/Javascript';
 import { Python } from '@styled-icons/fa-brands/Python';
 import { Html5 } from '@styled-icons/fa-brands/Html5';
