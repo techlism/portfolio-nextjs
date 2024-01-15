@@ -13,8 +13,6 @@ const greetings = [
  "Ciao"
 ];
 
-
-
 function Greeting() {
   const [index,setIndex] = useState(0);
   useEffect(() => {
@@ -23,10 +21,9 @@ function Greeting() {
     }, 3000);
     return () => clearInterval(timer);
   });
-
   return (
-    <Card className="auto-gradient m-2 max-w-[85vw] flex align-middle justify-start">
-      <CardContent> 
+    <Card className="auto-gradient m-2 lg:max-w-[56vw] max-w-[72vw] flex align-middle justify-start">
+      <CardContent>
         <div className="flex align-middle w-fit">
           <Transition
             show={true}

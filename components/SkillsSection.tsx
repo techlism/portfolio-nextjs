@@ -22,7 +22,7 @@ const iconSize = 50 ;
 
 const SkillsSection: React.FC = () => {
   return (
-    <Card className='m-2 max-w-[85vw] auto-gradient'>
+    <Card className='m-2 lg:max-w-[59vw] max-w-[75vw] auto-gradient'>
         <CardContent>
             <CardHeader>
                 <CardTitle className="lg:text-3xl md:text-2xl sm:text-base">

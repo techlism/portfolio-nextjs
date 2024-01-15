@@ -38,7 +38,7 @@
     --bgColor1:#f8f9f36a;   
     --bgColor2:#f8f8f7e9; 
     --font-color:#122040; 
-    --bg:#fff;
+
   }
  
   .dark {
@@ -70,10 +70,10 @@
     --input: 0 0% 14.9%;
     --ring: 0 0% 83.1%;
 
-    --bgColor1:#002658b7;
+    --bgColor1:#011e44d0;
     --bgColor2:#000000c7;
     --font-color:rgba(234, 234, 234, 0.992);
-    --bg:#00000000;
+
 
   }
 
@@ -103,5 +103,9 @@
   }
   .custom-font-color{
     color: var(--font-color);
+  }
+  .custom-scrollbar{
+    scroll-behavior: smooth;
+    scrollbar-color: rebeccapurple green;
   }
 }

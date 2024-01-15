@@ -1,3 +1,4 @@
+'use client'
 import * as React from "react"
 import { Minimize2 } from 'lucide-react';
 import { Button } from "@/shadcn-components/ui/button"
@@ -29,7 +30,7 @@ export function BottomDrawer({info}:{info:ProjectData}) {
             <DrawerTitle>{info.title}</DrawerTitle>
             <DrawerDescription>
                 <div>
-                    <ul className="custom-font-color">
+                    <ul className="custom-font-color text-left">
                         {info.description.map((d,index)=>(
                             <li key={index+" description list"}>
                                 {`-> ${d}`}

@@ -4,8 +4,9 @@ import {
     MenubarTrigger,
 } from "@/shadcn-components/ui/menubar"
 
-import DarkModeToggler from './DarkModeToggler';
+// import DarkModeToggler from './DarkModeToggler';
 import { Button } from "@/shadcn-components/ui/button";
+import DarkModeSwitch from "./DarkModeToggler";
 
 export default function Navbar(){
     return(
@@ -14,7 +15,7 @@ export default function Navbar(){
             <Button variant={'ghost'}>
                 Link
             </Button>    
-            <DarkModeToggler/>     
+            <DarkModeSwitch/>     
             </Menubar>     
         </nav>
     )
