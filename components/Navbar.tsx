@@ -15,7 +15,7 @@ export default function Navbar(){
     };
         
     return(
-        <nav className="w-[92vw] auto-gradient">
+        <nav className="w-[92vw] auto-gradient" id="navbar">
             <Menubar className="flex content-center justify-evenly p-6">
                 <Button variant="ghost" onClick={() => handleClick('projects')}>
                 Projects

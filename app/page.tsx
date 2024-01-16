@@ -5,6 +5,7 @@ import SkillsSection from '../components/SkillsSection';
 import ContactSection from '../components/ContactSection';
 import ExperienceSection from '../components/ExperienceSection';
 import { Card } from '@/shadcn-components/ui/card';
+import FooterMenu from '../components/FooterMenu';
 export default function Home(){
   return(
     <main className="flex min-h-screen flex-col items-center p-[10px]">
@@ -16,7 +17,7 @@ export default function Home(){
         <ContactSection/>
         <ExperienceSection/>
       </Card>
-      <p className='mt-8 m-2'>➖➖➖❌➖➖➖❌➖➖➖</p>
+      <FooterMenu/>
     </main>
   )
 }
