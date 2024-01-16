@@ -13,21 +13,20 @@ import {
 import { FileText } from "lucide-react"
 
 export function ResumeDialog(){
-
   return (
     <Dialog>
       <DialogTrigger asChild>
         <Button variant={'ghost'} className="flex gap-2 border align-middle p-4 text-lg">
-                            <FileText className="m-1"/>
-                            Resume
+            <FileText className="m-1"/>
+            Resume
         </Button>
       </DialogTrigger>
       <DialogContent className="lg:max-w-[70vw] max-w-[85vw] auto-gradient">
         <DialogHeader>
-          <DialogTitle>Resume</DialogTitle>
+          <DialogTitle>My Resume</DialogTitle>
         </DialogHeader>
-        <div className="flex align-middle justify-center">
-            <iframe src="/resume.pdf" className="rounded-lg custom-scrollbar" height={'650'} width={'600'}/>
+        <div className="flex align-middle justify-center overflow-auto">
+            <iframe src="/resume.pdf" className="rounded-lg custom-scrollbar"  height={'650'} width={'600'} />
         </div>
       </DialogContent>
     </Dialog>
