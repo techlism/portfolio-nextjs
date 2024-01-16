@@ -17,7 +17,7 @@ export default function FooterMenu(){
         document.getElementById(id)!.scrollIntoView({ behavior: 'smooth' });
     };
     return(
-        <Menubar className="mt-10 m-2 p-7 gap-4">
+        <Menubar className="mt-10 m-2 p-7 gap-4 auto-gradient">
             <TooltipProvider>
                 < Tooltip>
                     <TooltipTrigger asChild>    
