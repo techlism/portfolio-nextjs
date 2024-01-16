@@ -72,9 +72,9 @@ const projects:ProjectData[] = [
 
 export default function ProjectsCarousel(){
     return(
-        <div>
-        <Carousel className="max-w-[75vw]">
-        <h1 className="text-5xl m-2 font-medium">Projects</h1>
+        <div id="projects">
+        <Carousel className="max-w-[75vw] mt-10">
+        <h1 className="text-4xl m-2 font-bold">Projects</h1>
             <CarouselContent className="lg:max-w-[57vw] max-w-[73vw]">                
                 {projects.map((project,index)=>(
                     <CarouselItem className="lg:max-w-[54.8vw] max-w-[72vw] "key={index+'carousel'}>

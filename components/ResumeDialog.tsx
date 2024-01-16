@@ -26,7 +26,7 @@ export function ResumeDialog(){
           <DialogTitle>My Resume</DialogTitle>
         </DialogHeader>
         <div className="flex align-middle justify-center overflow-auto">
-            <iframe src="/resume.pdf" className="rounded-lg custom-scrollbar"  height={'650'} width={'600'} />
+            <iframe src="/resume.pdf" className="rounded-lg custom-scrollbar"  height={'550'} width={'600'} />
         </div>
       </DialogContent>
     </Dialog>

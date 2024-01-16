@@ -1,9 +1,8 @@
 "use client"
 import React, { useState, useEffect } from "react";
 import { Transition } from "@headlessui/react";
-import { Card,CardContent, CardDescription } from "@/shadcn-components/ui/card";
+import { Card,CardContent } from "@/shadcn-components/ui/card";
 import { Separator } from '@/shadcn-components/ui/separator';
-import { ArrowRight } from "lucide-react";
 
 const greetings = [
  "Hello",
@@ -22,7 +21,7 @@ function Greeting() {
     return () => clearInterval(timer);
   });
   return (
-    <Card className="auto-gradient m-2 lg:max-w-[56vw] max-w-[72vw] flex align-middle justify-start">
+    <Card className="auto-gradient m-2 mb-0 mt-10 lg:max-w-[59vw] max-w-[91vw] md:max-w-[70vw] flex align-middle justify-start">
       <CardContent>
         <div className="flex align-middle w-fit">
           <Transition
@@ -40,10 +39,10 @@ function Greeting() {
           </Transition>
         </div>
         <Separator/>
-        <div className="text-xl mt-3.5 custom-font-color font-medium">
-            {/* <header className="inline"> */}
-              {"->"} I’m <b>Kundan</b>, a Developer who seamlessly blends code and creativity to construct immersive digital experiences.<br/> {"->"} My work, a fusion of functionality and aesthetics, is shaped by my passion for content creation and photography.<br/> {"->"} Let’s join forces to bring your ideas to life, crafting a digital narrative that leaves a lasting impression.
-            {/* </header> */}
+        <div className="lg:text-xl md:text-xl mt-3.5 sm:text-base custom-font-color font-medium">
+            <p>{"->"} I’m <b>Kundan</b>, a Developer who seamlessly blends code and creativity to construct immersive digital experiences.</p>
+            <p className="mt-3">{"->"} My work, a fusion of functionality and aesthetics, is shaped by my passion for content creation and photography.</p>
+            <p className="mt-3">{"->"} Let’s join forces to bring <u>your ideas to life</u>, crafting a digital narrative that leaves a lasting impression.</p>
         </div>
       </CardContent>
     </Card>    

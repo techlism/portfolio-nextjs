@@ -15,8 +15,11 @@ import { Button } from "@/shadcn-components/ui/button"
 const DarkModeSwitch = () =>{  
   const { theme, setTheme } = useTheme();
   const changeTheme = () =>{
-    if(theme==='light') setTheme('dark')
-    if(theme==='dark') setTheme('light');
+    setTimeout(() => {
+      if(theme === 'light') setTheme('dark');
+      else if(theme === 'dark') setTheme('light');
+    }, 150);
+  
   }
 
   return(

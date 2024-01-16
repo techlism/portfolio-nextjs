@@ -106,6 +106,25 @@
   }
   .custom-scrollbar{
     scroll-behavior: smooth;
-    scrollbar-color: rebeccapurple green;
   }
+  ::-webkit-scrollbar {
+    width: 10px;
+
+  }
+  
+  /* the buttons on the scrollbar (arrows pointing upwards and downwards) */
+  ::-webkit-scrollbar-button {
+    display: none;
+  }
+  
+  /* the draggable scrolling handle */
+  ::-webkit-scrollbar-thumb {
+    background: #b2b2b2; 
+    border-radius: 4px;
+  }
+  
+  /* on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }  
 }

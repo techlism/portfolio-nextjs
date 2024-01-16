@@ -13,16 +13,17 @@ import { Git } from '@styled-icons/fa-brands/Git';
 import { Canva } from '@styled-icons/simple-icons/Canva';
 import { Typescript } from '@styled-icons/simple-icons/Typescript';
 import { Nextdotjs } from '@styled-icons/simple-icons/Nextdotjs';
-import {Adobe} from '@styled-icons/boxicons-logos/Adobe';
+// import {Adobe} from '@styled-icons/boxicons-logos/Adobe';
+import {TailwindCss} from '@styled-icons/boxicons-logos/TailwindCss';
 
-import { Card, CardContent, CardFooter, CardTitle, CardHeader } from '@/shadcn-components/ui/card';
+import { Card, CardContent, CardFooter, CardTitle, CardHeader, CardDescription } from '@/shadcn-components/ui/card';
 import { Separator } from '@/shadcn-components/ui/separator';
 
-const iconSize = 50 ;
+const iconSize = 40 ;
 
 const SkillsSection: React.FC = () => {
   return (
-    <Card className='m-2 lg:max-w-[59vw] max-w-[75vw] auto-gradient'>
+    <Card className='m-4 mt-10 mb-0 lg:max-w-[59vw] max-w-[91vw] md:max-w-[70vw]' id='skills'>
         <CardContent>
             <CardHeader>
                 <CardTitle className="lg:text-3xl md:text-2xl sm:text-base">
@@ -31,12 +32,12 @@ const SkillsSection: React.FC = () => {
             </CardHeader>
 
             <Separator/>
-            <CardFooter  className="grid grid-cols-3 md:grid-cols-5 lg:flex gap-4 p-4 content-center custom-font-color">
-                <Cplusplus size={iconSize} />
+            <CardFooter  className="flex flex-wrap gap-3 p-4 content-center justify-center custom-font-color">
+                {/* <Cplusplus size={iconSize} />
                 <Python size={iconSize} />                                
                 <Html5 size={iconSize} />
                 <Css3 size={iconSize} />
-                <Javascript size={iconSize} />
+                <Javascript size={iconSize}  className='rounded-lg'/>
                 <ReactLogo size={iconSize} />
                 <NodeJs size={iconSize} />                
                 <Mongodb size={iconSize} />
@@ -46,7 +47,109 @@ const SkillsSection: React.FC = () => {
                 <Nextdotjs size={iconSize} />                
                 <Canva size={iconSize} />
                 <Adobe size={iconSize} /> 
-                <Adobe size={iconSize} /> 
+                <Adobe size={iconSize} />  */}
+                <Card className='auto-gradient'>
+                <CardContent>
+                    <CardHeader>
+                    <CardTitle>
+                        Markup & Stylesheet Languages
+                    </CardTitle>
+                    </CardHeader>
+                    <CardFooter className='flex align-middle justify-center gap-2 '>
+                        <Html5 size={iconSize} />
+                        <Css3 size={iconSize} />
+                        <TailwindCss size={iconSize} />
+                    </CardFooter>
+                </CardContent>
+                </Card>
+
+                <Card className='auto-gradient'>
+                <CardContent>
+                    <CardHeader>
+                    <CardTitle>
+                        Programming Languages
+                    </CardTitle>
+                    </CardHeader>
+                    <CardFooter className='flex align-middle justify-center gap-2 '>
+                        <Cplusplus size={iconSize} />
+                        <Python size={iconSize} />
+                        <Javascript size={iconSize} className='rounded-lg'/>
+                        <Typescript size={iconSize} />
+                    </CardFooter>
+                </CardContent>
+                </Card>
+
+                <Card className='auto-gradient'>
+                <CardContent>
+                    <CardHeader>
+                    <CardTitle>
+                        Libraries and Frameworks
+                    </CardTitle>
+                    </CardHeader>
+                    <CardFooter className='flex align-middle justify-center gap-2 '>
+                        <ReactLogo size={iconSize} />
+                        <NodeJs size={iconSize} />
+                        <Nextdotjs size={iconSize} />
+                    </CardFooter>
+                    
+                </CardContent>
+                </Card>
+
+                <Card className='auto-gradient'>
+                <CardContent>
+                    <CardHeader>
+                    <CardTitle>
+                        Databases
+                    </CardTitle>
+                    </CardHeader>
+                    <CardFooter className='flex align-middle justify-center gap-2 '>
+                        <Mongodb size={iconSize} />
+                    </CardFooter>
+                    
+                </CardContent>
+                </Card>
+
+                <Card className='auto-gradient'>
+                <CardContent>
+                    <CardHeader>
+                    <CardTitle>
+                        Operating Systems
+                    </CardTitle>
+                    </CardHeader>
+                    <CardFooter className='flex align-middle justify-center gap-3'>
+                        <Linux size={iconSize} />
+                    </CardFooter>
+                    
+                </CardContent>
+                </Card>
+
+                <Card className='auto-gradient'>
+                <CardContent>
+                    <CardHeader>
+                    <CardTitle>
+                        Version Control
+                    </CardTitle>
+                    </CardHeader>
+                    <CardFooter className='flex align-middle justify-center gap-3'>
+                        <Git size={iconSize} />
+                    </CardFooter>
+                    
+                </CardContent>
+                </Card>
+
+                <Card className='auto-gradient'>
+                <CardContent>
+                    <CardHeader>
+                    <CardTitle>
+                        Design Tools
+                    </CardTitle>
+                    </CardHeader>
+                    <CardFooter className='flex align-middle justify-center gap-3'>
+                        <Canva size={iconSize} />
+                        {/* <Adobe size={iconSize} /> */}
+                    </CardFooter>                    
+                </CardContent>
+                </Card>                
             </CardFooter>
         </CardContent>
     </Card>
