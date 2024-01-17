@@ -51,9 +51,9 @@ const projects:ProjectData[] = [
             "A web app that shows a homepage with weather and stock data. Built with Next.js, CSS, and APIs.", // 16 words
             "Homepage with weather and stock data using web technologies.", // 8 words
         ],
-        deployed: "https://imagesage.netlify.app",
-        github: "https://github.com/techlism/imagesage-frontend",
-        tags: ["Nextjs"]
+        deployed: "https://homepage-nine-opal.vercel.app/",
+        github: "https://github.com/techlism/custom-homepage-nextjs",
+        tags: ["Nextjs", "WeatherAPI"]
     },    
     {
         title: "LearnJs",

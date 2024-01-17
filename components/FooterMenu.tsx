@@ -13,7 +13,7 @@ import {
 
 import Link from 'next/link';
 export default function FooterMenu(){
-    const handleClick = (id: string) => {
+    const scrollTo = (id: string) => {
         document.getElementById(id)!.scrollIntoView({ behavior: 'smooth' });
     };
     return(
@@ -21,7 +21,7 @@ export default function FooterMenu(){
             <TooltipProvider>
                 < Tooltip>
                     <TooltipTrigger asChild>    
-                        <Button variant={'outline'} onClick={()=>handleClick('navbar')}>
+                        <Button variant={'outline'} onClick={()=>scrollTo('navbar')}>
                             <MoveUp/>
                         </Button>
                     </TooltipTrigger>
