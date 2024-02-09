@@ -20,7 +20,7 @@ export default function ExperienceSection() {
           <div className="mb-8 mt-1">
             <ClockIcon className=" w-5 h-5 inline-block mr-2 -mt-1" />
             <span className="font-semibold">Swabhyaas</span>
-            <div className="text-gray-400 text-sm">Dec 2023 - Present</div>
+            <div className="text-gray-400 text-sm">Dec 2023 - Feb 2024</div>
           </div>
           <div
             className="absolute w-3 h-3 bg-foreground rounded-full -left-1.5 border border-gray-600"
