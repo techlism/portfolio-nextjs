@@ -18,7 +18,7 @@ const config = {
       screens: {
         "2xl": "1400px",
       },
-    },
+    },  
     extend: {
       colors: {
         border: "hsl(var(--border))",
@@ -55,6 +55,46 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        rosewood: {
+          '50': '#fff1f1',
+          '100': '#ffe3e3',
+          '200': '#ffccce',
+          '300': '#ffa2a7',
+          '400': '#ff6d78',
+          '500': '#f93a4e',
+          '600': '#e61837',
+          '700': '#c30d2d',
+          '800': '#a30e2d',
+          '900': '#8b102d',
+          '950': '#670419',
+        },
+        'punch': {
+          '50': '#fef2f2',
+          '100': '#ffe1e1',
+          '200': '#ffc8c8',
+          '300': '#ffa2a2',
+          '400': '#fd6c6c',
+          '500': '#f53e3e',
+          '600': '#e32626',
+          '700': '#be1717',
+          '800': '#9d1717',
+          '900': '#821a1a',
+          '950': '#470808',
+      },
+      'active': {
+        '50': '#fcf4ff',
+        '100': '#f7e5ff',
+        '200': '#f1d0ff',
+        '300': '#e6abff',
+        '400': '#d875ff',
+        '500': '#c941ff',
+        '600': '#bb1cff',
+        '700': '#a40de3',
+        '800': '#8a10b9',
+        '900': '#7b10a2',
+        '950': '#4f0070',
+      },
+    
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -77,7 +117,7 @@ const config = {
       },
       backgroundColor : {
         'radial-gradient' : 'radial-gradient(ellipse at top, #e66465, transparent),radial-gradient(ellipse at bottom, #4d9f0c, transparent)'
-      }
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],

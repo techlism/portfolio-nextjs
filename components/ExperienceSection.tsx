@@ -5,13 +5,11 @@ import { Separator } from '@/shadcn-components/ui/separator';
 
 export default function ExperienceSection() {
     return (
-      <Card  className="auto-gradient">
+      <Card  className="bg-active-100 dark:bg-transparent mt-10 border rounded-lg p-2 shadow-[-2px_-2px_2px_2px_rgba(0,0,0,0.1),_2px_2px_2px_2px_rgba(45,78,255,0.15)] flex flex-col">
         <CardHeader>
-            <CardTitle className="lg:text-3xl md:text-2xl sm:text-base">Experience</CardTitle>
+            <CardTitle className="ml-1 text-5xl font-bold text-active-400 dark:text-active-500">Experience</CardTitle>
         </CardHeader>
-        <div className='mx-6'>
-            <Separator/>
-        </div>        
+            <Separator className='max-w-[99%] bg-active-950 mx-auto'/>
         <CardContent className='mt-6 p-12 align-middle'>
         {/* <Separator/> */}
         <CardFooter>

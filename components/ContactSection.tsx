@@ -17,36 +17,33 @@ import Image from "next/image";
 
 export default function ContactSection(){
     return(
-        <Card className="auto-gradient ">        
-            <CardHeader>
-                <CardTitle className="lg:text-3xl md:text-2xl sm:text-base">
-                    Get in touch..
-                </CardTitle>                    
-            </CardHeader>
-            
-            <CardContent>
-            <Separator/>
-                <CardFooter className="flex flex-col">            
-                    <div className="flex space-x-3 h-7 m-5 mx-3 mt-6 custom-font-color">
-                        <Link href={'mailto:email4kundanprasad@gmail.com'} target="blank">
-                            <SendHorizontal size={30}/> 
-                        </Link>
-                        <Separator orientation="vertical" />
-                        <Link href={'https://www.linkedin.com/in/kundan-kumar-a54461202/'} target="blank">
-                            <Linkedin size={30}/>
-                        </Link>                        
-                        <Separator orientation="vertical" />
-                        <Link href={'https://github.com/techlism'} target="blank">
-                            <Github size={30}/>
-                        </Link>                    
-                    </div>
-                    {/* <Separator/> */}
-                    <Link href={'https://blog.techlism.in'} className="m-2" target="blank">
-                        <Image src={'/blog.png'} alt="Techlism Blog Page" height={200} width={200}  className="mb-5 rounded-lg"/>
-                    </Link>
-                    <ResumeDialog/>
-                </CardFooter>                
-            </CardContent>
-        </Card>
+        <div className="bg-active-100 dark:bg-transparent mt-10 border rounded-lg p-2 shadow-[-2px_-2px_2px_2px_rgba(0,0,0,0.1),_2px_2px_2px_2px_rgba(45,78,255,0.15)] flex flex-col" id="contact">                
+            <h1 className="mt-6 ml-5 mb-2 text-5xl font-bold text-active-400 dark:text-active-500">
+                Get in Touch
+            </h1>
+            <Separator className="my-4 mx-auto w-[99%] bg-active-950"/>         
+
+            <div className="flex space-x-5 mt-4 custom-font-color justify-center auto-gradient max-w-fit mx-auto p-4 rounded-md text-active-100">
+                <Link href={'mailto:email4kundanprasad@gmail.com'} target="blank" className="hover:text-active-950">
+                    <SendHorizontal size={30} /> 
+                </Link>
+
+                <Link href={'https://www.linkedin.com/in/kundan-kumar-a54461202/'} target="blank" className="hover:text-active-950">
+                    <Linkedin size={30}/>
+                </Link>                        
+
+                <Link href={'https://github.com/techlism'} target="blank" className="hover:text-active-950">
+                    <Github size={30}/>
+                </Link>                    
+            </div>
+            {/* <Separator/> */}
+            <div className="flex justify-center mt-5 flex-col items-center">
+                <Link href={'https://blog.techlism.in'} target="blank">
+                    <Image src={'/blog.png'} alt="Techlism Blog Page" height={200} width={200}  className="mb-5 rounded-lg"/>
+                </Link>                
+            <ResumeDialog/>    
+            </div>
+         
+        </div>
     )
 }

@@ -38,7 +38,7 @@
     --bgColor1:#f8f9f36a;   
     --bgColor2:#f8f8f7e9; 
     --font-color:#122040; 
-
+    --bg-url: url('/noise.svg');
   }
  
   .dark {
@@ -73,7 +73,7 @@
     --bgColor1:#011e44d0;
     --bgColor2:#000000c7;
     --font-color:rgba(234, 234, 234, 0.992);
-
+    --bg-url: url('/noise_dark.svg');
 
   }
 
@@ -92,18 +92,24 @@
     background-size: 30px 30px; */
   }
   .auto-gradient{
-    background-image: radial-gradient(
+    /* background-image: radial-gradient(
       ellipse at center,
       var(--bgColor1),
       var(--bgColor2)
-    );
+    ); */
+    background-image: var(--bg-url);
   }  
-  .custom-font {
-    font-family: 'Lato','Helvetica',sans-serif ;
+
+  .glassmorphic{
+    background: rgba( 255, 255, 255, 0.1 );
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 ); */
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    /* border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 ); */
   }
-  .custom-font-color{
-    color: var(--font-color);
-  }
+
+  /* Custom Scrollbar */
   .custom-scrollbar{
     scroll-behavior: smooth;
   }
@@ -111,7 +117,6 @@
     width: 10px;
 
   }
-  
   /* the buttons on the scrollbar (arrows pointing upwards and downwards) */
   ::-webkit-scrollbar-button {
     display: none;

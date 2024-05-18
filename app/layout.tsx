@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
-import { Inter, Montserrat, Roboto, Salsa, Lato } from 'next/font/google'
+import { Gabarito } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '../components/theme-provider';
+import Navbar from '@/components/Navbar';
 
-const inter = Inter({ subsets: ['latin'] })
+const gabarito = Gabarito({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: "Kundan's Portfolio",
@@ -17,13 +18,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={gabarito.className}>
           <ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
+            <Navbar/>
             {children}
           </ThemeProvider>
       </body>

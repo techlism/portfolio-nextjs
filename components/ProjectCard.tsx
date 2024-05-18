@@ -1,3 +1,4 @@
+// Not using this file, but keeping it for reference
 "use client"
 import {
     Card,
@@ -9,7 +10,7 @@ import {
 } from "@/shadcn-components/ui/card" ;
 import { Separator } from "@/shadcn-components/ui/separator";
 import Link from "next/link";
-import { ProjectData } from "./ProjectsCarousel";
+import { ProjectData } from "./ProjectSection";
 import { Code, ExternalLink } from 'lucide-react';
 import { BottomDrawer } from './BottomDrawer';
 
@@ -38,9 +39,6 @@ export default function ProjectCard(props : ProjectData){
                 <Link href={props.deployed} target="blank">
                     <ExternalLink/>
                 </Link>        
-                {/* {props.github} 
-                <br />
-                {props.deployed}  */}
             </CardFooter>            
         </Card>
     )

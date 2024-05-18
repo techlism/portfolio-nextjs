@@ -1,6 +1,6 @@
 'use client'
 import * as React from "react"
-import { Minimize2 } from 'lucide-react';
+import { ExpandIcon, Minimize2 } from 'lucide-react';
 import { Button } from "@/shadcn-components/ui/button"
 import {
   Drawer,
@@ -15,33 +15,29 @@ import {
 
 import { Badge } from "@/shadcn-components/ui/badge";
 
-import { ProjectData } from "./ProjectsCarousel"
+import { ProjectData } from "@/lib/projects";
+
 import { Separator } from '@/shadcn-components/ui/separator';
 
 export function BottomDrawer({info}:{info:ProjectData}) {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button variant="ghost">Know more</Button>
+        <Button variant="ghost" className="m-0 p-0 hover:bg-transparent hover:text-active-800"><ExpandIcon size={30}/></Button>
       </DrawerTrigger>
-      <DrawerContent>
-        <div className="mx-auto w-full max-w-sm flex flex-col align-middle justify-center gap-2">
+      <DrawerContent className="bg-active-50 border-none dark:bg-inherit">
+        <div className="mx-auto w-full max-w-lg flex flex-col align-middle justify-center gap-2">
           <DrawerHeader>
-            <DrawerTitle>{info.title}</DrawerTitle>
-            <DrawerDescription>
-                <div>
-                    <ul className="custom-font-color text-left">
-                        {info.description.map((d,index)=>(
-                            <li key={index+" description list"}>
-                                {`-> ${d}`}
-                            </li>
-                        ))}
-                    </ul>
-                </div>
+            <DrawerTitle className="text-4xl">{info.title}</DrawerTitle>
+            <DrawerDescription className="text-justify p-1">
+              {info.description[0]}
             </DrawerDescription>
           </DrawerHeader>
           <div className="flex justify-center">
-            <Separator className="max-w-16"/>
+            <Separator className="max-w-[92%] mx-auto mb-4"/>
+          </div>
+          <div className="max-w-[92%] mx-auto">
+            <img src={info.source} alt={info.title} className="rounded-md border"/>
           </div>
           <div className="flex gap-5 justify-center m-5">
             {info.tags.map((tag,index)=>(

@@ -16,7 +16,7 @@ export function ResumeDialog(){
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <Button variant={'ghost'} className="flex gap-2 border align-middle p-4 text-lg">
+        <Button variant={'ghost'} className="flex gap-2 border align-middle p-4 text-lg max-w-max bg-active-300 dark:bg-active-400 mb-5">
             <FileText className="m-1"/>
             Resume
         </Button>
