@@ -5,10 +5,10 @@ function Greeting() {
   return (
     <div className="bg-active-50 dark:bg-transparent mt-6 border  rounded-lg p-2 shadow-[-2px_-2px_2px_2px_rgba(0,0,0,0.1),_2px_2px_2px_2px_rgba(45,78,255,0.15)] text-active-400 dark:text-active-500" id="greetings" >
       <h1 className="mt-6 ml-5 text-5xl font-bold ">
-        Greetings, I am Kundan...
+       👋 I am Kundan...
       </h1>
       <p className="ml-5 text-lg mt-2">
-        I&apos;m a software engineer with a passion for problem-solving and a love for coding. I enjoy turning complex problems into simple, beautiful, and intuitive solutions. When I&apos;m not coding, you might think I&apos;m exploring the great outdoors. Just kidding! You&apos;ll most likely find me watching YouTube.
+        A software engineer with a passion for problem-solving and a love for programming. I enjoy turning complex problems into simple, beautiful, and intuitive solutions. When I&apos;m not coding, you might think I&apos;m exploring the great outdoors. Just kidding! You&apos;ll most likely find me watching YouTube.
       </p>
       <p className="ml-5 text-lg mt-2">
         Have a project or a full time opportunity in mind? <Link href={'#contact'} className="hover:underline">Let&apos;s connect!</Link>
