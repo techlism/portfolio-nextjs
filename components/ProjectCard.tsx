@@ -10,7 +10,7 @@ import {
 } from "@/shadcn-components/ui/card" ;
 import { Separator } from "@/shadcn-components/ui/separator";
 import Link from "next/link";
-import { ProjectData } from "./ProjectSection";
+import { ProjectData } from "@/lib/projects";
 import { Code, ExternalLink } from 'lucide-react';
 import { BottomDrawer } from './BottomDrawer';
 
