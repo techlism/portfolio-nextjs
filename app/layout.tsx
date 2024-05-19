@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Kundan's Portfolio",
     description: 'Created By Kundan @techlism',
-    images: ["/portfolio_og.webp"]
+    images: ["https://portfolio.techlism.in/portfolio_og.webp"]
   },
   twitter: {
     site: 'https://portfolio.techlism.in',
