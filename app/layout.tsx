@@ -9,7 +9,17 @@ const gabarito = Gabarito({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: "Kundan's Portfolio",
   description: 'Created By Kundan @techlism',
+  openGraph: {
+    title: "Kundan's Portfolio",
+    description: 'Created By Kundan @techlism',
+    images: ["/portfolio_og.webp"]
+  },
+  twitter: {
+    site: 'https://portfolio.techlism.in',
+    images: ["/portfolio_og.webp"],
+  },
 }
+
 
 export default function RootLayout({
   children,
