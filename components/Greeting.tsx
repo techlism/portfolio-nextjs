@@ -3,7 +3,7 @@ import { Separator } from '@/shadcn-components/ui/separator';
 import Link from "next/link";
 function Greeting() {
   return (
-    <div className="bg-active-50 dark:bg-transparent mt-6 border  rounded-lg p-2 shadow-[-2px_-2px_2px_2px_rgba(0,0,0,0.1),_2px_2px_2px_2px_rgba(45,78,255,0.15)] text-active-400 dark:text-active-500" id="greetings" >
+    <div className="bg-active-50 dark:bg-transparent mt-6 border  rounded-lg p-2 pb-4 shadow-[-2px_-2px_2px_2px_rgba(0,0,0,0.1),_2px_2px_2px_2px_rgba(45,78,255,0.15)] text-active-500" id="greetings" >
       <h1 className="mt-6 ml-5 text-5xl font-bold ">
        👋 I am Kundan...
       </h1>
