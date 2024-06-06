@@ -21,12 +21,12 @@ export function ResumeDialog(){
             Resume
         </Button>
       </DialogTrigger>
-      <DialogContent className="lg:max-w-[70vw] max-w-[85vw] bg-active-50 dark:bg-transparent">
+      <DialogContent className="lg:max-w-[70vw] max-w-[85vw] bg-active-50 dark:bg-background">
         <DialogHeader>
           <DialogTitle>My Resume</DialogTitle>
         </DialogHeader>
         <div className="flex align-middle justify-center overflow-auto">
-            <iframe src="/resume.pdf" className="rounded-lg custom-scrollbar"  height={'550'} width={'600'} />
+            <iframe src="/resume.pdf" className="rounded-lg custom-scrollbar"  height={'480'} width={'500'} />
         </div>
       </DialogContent>
     </Dialog>
