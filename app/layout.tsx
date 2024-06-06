@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     site: 'https://portfolio.techlism.in',
-    images: ["/portfolio_og.webp"],
+    images: ["https://portfolio.techlism.in/portfolio_og.webp"],
   },
 }
 

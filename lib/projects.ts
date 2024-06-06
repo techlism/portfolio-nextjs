@@ -69,15 +69,15 @@ export const projects: ProjectData[] = [
         tags: ["Nextjs", "Clerk", "SQLite"]
     },   
     {
-        title: "Custom Home-Page",
+        title: "Custom HomePage",
         source: '/homepage.webp',
         description: [
             "Custom Homepage is a web app that displays a personalized homepage with weather and stock market data. It uses Next.js and CSS for the design and framework and some APIs for fetching the weather and sensex and s&p 500 data. Custom Homepage is a simple and elegant way to start your day.",
             "A web app that shows a homepage with weather and stock data. Built with Next.js, CSS, and APIs.", // 16 words
             "Homepage with weather and stock data using web technologies.", // 8 words
         ],
-        deployed: "https://homepage-nine-opal.vercel.app/",
-        github: "https://github.com/techlism/custom-homepage-nextjs",
+        deployed: "https://homepage.techlism.in",
+        github: "https://github.com/techlism/custom_homepage",
         tags: ["Nextjs", "WeatherAPI", "RestAPI"]
     },       
 ]
