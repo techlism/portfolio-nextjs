@@ -1,44 +1,77 @@
-import type { Metadata } from 'next'
-import { Gabarito } from 'next/font/google'
-import './globals.css'
-import { ThemeProvider } from '../components/theme-provider';
-import Navbar from '@/components/Navbar';
-
-const gabarito = Gabarito({ subsets: ['latin'] })
+import "./global.css";
+import type { Metadata } from "next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+import { Navbar } from "components/nav";
+import { Analytics } from "@vercel/analytics/react";
+import Footer from "components/footer";
+import { ThemeProvider } from "components/theme-switch";
+import { metaData } from "./config";
 
 export const metadata: Metadata = {
-  title: "Kundan's Portfolio",
-  description: 'Created By Kundan @techlism',
+  metadataBase: new URL(metaData.baseUrl),
+  title: {
+    default: metaData.title,
+    template: `%s | ${metaData.title}`,
+  },
+  description: metaData.description,
   openGraph: {
-    title: "Kundan's Portfolio",
-    description: 'Created By Kundan @techlism',
-    images: ["https://portfolio.techlism.in/portfolio_og.webp"]
+    images: metaData.ogImage,
+    title: metaData.title,
+    description: metaData.description,
+    url: metaData.baseUrl,
+    siteName: metaData.name,
+    locale: "en_US",
+    type: "website",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
   twitter: {
-    site: 'https://portfolio.techlism.in',
-    images: ["https://portfolio.techlism.in/portfolio_og.webp"],
+    title: metaData.name,
+    card: "summary_large_image",
   },
-}
+  icons: {
+    icon: "/favicon.ico",
+  },
+};
 
+const cx = (...classes) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={gabarito.className}>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Navbar/>
+    <html
+      lang="en"
+      className={GeistMono.className}
+    >
+      <body className="antialiased max-w-5xl flex flex-col min-h-dvh mx-auto">
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          storageKey="theme"        
+        >
+        <Navbar />
+        <div className="w-full flex-grow flex items-center justify-center p-4">
+          <div>
             {children}
-          </ThemeProvider>
+          </div>          
+        </div>
+        <Footer />
+        </ThemeProvider>
       </body>
     </html>
-  )
+  );
 }
