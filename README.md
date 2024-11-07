@@ -19,4 +19,4 @@ greatly appreciated!
 
 ## Licence
 
-Nextfolio is open-source and released under the MIT License.
+It is open-source and released under the MIT License.
