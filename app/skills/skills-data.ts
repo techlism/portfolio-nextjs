@@ -9,23 +9,27 @@ export const skills: Skills[] = [
         skills: ["JavaScript", "TypeScript", "Python", "C++", "C"]
     },
     {
-        category : "Libraries & Frameworks",
+        category: "Libraries & Frameworks",
         skills: ["React", "Next.js", "TailwindCSS", "Node.js"]
     },
     {
-        category : "Databases",
+        category: "Databases",
         skills: ["SQLite", "MongoDB", "SQL"]
     },
     {
-        category : "Tools & Technologies",
-        skills: ["Git", "GitHub", "Vercel"]        
+        category: "Tools & Technologies",
+        skills: ["Git", "GitHub", "Vercel"]
     },
     {
-        category : "Operating Systems",
+        category: "Operating Systems",
         skills: ["Windows", "Linux"]
     },
     {
-        category : "Currently Learning",
-        skills : ["Amazon Web Services", "Docker", "Kubernetes", "DevOps"]
-    }
+        category: "AI Tools",
+        skills: ["OpenAI API", "Gemini API"]
+    },
+    {
+        category: "Currently Learning",
+        skills: ["Amazon Web Services", "DevOps", "Some AI"]
+    },
 ]
