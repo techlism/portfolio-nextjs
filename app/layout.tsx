@@ -3,7 +3,6 @@ import type { Metadata } from "next";
 import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import { Navbar } from "components/nav";
-import { Analytics } from "@vercel/analytics/react";
 import Footer from "components/footer";
 import { ThemeProvider } from "components/theme-switch";
 import { metaData } from "./config";
